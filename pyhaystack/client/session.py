@@ -560,6 +560,8 @@ class HaystackSession(object):
         for (ts, val) in timestamp_records:
             grid.append({"ts": ts, "val": val})
 
+        print(grid)
+
         return self._post_grid("hisWrite", grid, callback, **kwargs)
 
     def _on_invoke_action(self, entity, action, callback, action_args, **kwargs):
