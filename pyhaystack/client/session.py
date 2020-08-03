@@ -560,7 +560,7 @@ class HaystackSession(object):
         for (ts, val) in timestamp_records:
             grid.append({"ts": ts, "val": val})
 
-        print(grid)
+        # print(grid)
 
         return self._post_grid("hisWrite", grid, callback, **kwargs)
 

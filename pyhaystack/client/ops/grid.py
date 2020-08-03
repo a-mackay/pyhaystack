@@ -407,6 +407,7 @@ class PostGridOperation(BaseGridOperation):
 
         # Convert the grids to their native format
         self._body = hszinc.dump(grid, mode=post_format).encode("utf-8")
+        print(self._body)
         if post_format == hszinc.MODE_ZINC:
             self._content_type = "text/zinc"
         else:
